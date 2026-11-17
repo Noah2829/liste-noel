@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ma liste de Noël</title>
+<meta name="description" content="Ma liste de Noël : une sélection d’idées cadeaux.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500;1,9..144,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lights" aria-hidden="true"></div>
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top">🎄 Noël <span>2026</span></a>
+  <a class="nav-link" href="#liste">Voir la liste</a>
+</header>
+
+<section class="hero" id="top">
+  <div class="tree" aria-hidden="true">🎄</div>
+  <p class="eyebrow">Joyeux Noël 2026</p>
+  <h1>Ma liste de Noël</h1>
+  <p class="lead">Une sélection d’idées cadeaux choisies avec amour. Chaque carte renvoie directement vers le produit.</p>
+  <div class="count" id="countdown" aria-live="polite"></div>
+  <a class="cta" href="#liste">Découvrir les cadeaux <span>↓</span></a>
+</section>
+
+<main class="wrap" id="liste">
+  <div class="toolbar">
+    <div class="chips" id="filters"></div>
+    <div class="progress">
+      <span id="progressText"></span>
+      <div class="bar"><i id="progressBar"></i></div>
+    </div>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- ===== CADEAU : Parfum ===== -->
+    <article class="card" data-cat="Lifestyle">
+      <div class="media">🧥</div>
+      <div class="body">
+        <h3>Veste buchan</h3>
+        <p>Une veste de pluie verte au style tendance, motif guépard qui se révèle au contact de l’eau. Parfaite pour affronter l’hiver avec du style.</p>
+        <div class="row">
+          <span class="price">119€</span>
+          <a class="btn" href="https://buchan.store/products/water-reactive-cheetah-rain-jacket-green" target="_blank" rel="noopener noreferrer">Voir le produit</a>
+        </div>
+      </div>
+      <button class="gift">Marquer comme offert</button>
+    </article>
+
+
+    <!-- ===== CADEAU : Coffret soin ===== -->
+    <article class="card" data-cat="Musique">
+      <div class="media">🎤</div>
+      <div class="body">
+        <h3>Concert Tayc</h3>
+       <p>Une soirée de concert pour voir Tayc sur scène au Dôme de Marseille. Un moment de musique et d’ambiance à partager.</p>
+        <div class="row">
+          <span class="price">59 €</span>
+          <a class="btn" href="https://www.fnacspectacles.com/event/tayc-joya-tour-le-dome-21682353/" target="_blank" rel="noopener noreferrer">Voir le produit</a>
+        </div>
+      </div>
+      <button class="gift">Marquer comme offert</button>
+    </article>
+
+    <!-- ===== CADEAU : Bijoux (promo Black Friday) ===== -->
+    <article class="card" data-cat="Musique">
+      <div class="media">🎤</div>
+      <div class="body">
+        <h3>Concert Jokair</h3>
+       <p>Une place pour le concert de Jokair, « La dernière rockstar tour », au Dôme de Marseille. Une soirée pleine d’énergie en perspective.</p>
+        
+        <div class="row">
+          <div class="prices">
+            <span class="price">49 €</span>
+          </div>
+          <a class="btn" href="https://www.fnacspectacles.com/event/jokair-la-derniere-rockstar-tour-le-dome-22159446/" target="_blank" rel="noopener noreferrer">Voir le produit</a>
+        </div>
+      </div>
+      <button class="gift">Marquer comme offert</button>
+    </article>
+
+    <!-- ===== CADEAU : Bougie ===== -->
+    <article class="card" data-cat="High-tech">
+      <div class="media">🎧</div>
+      <div class="body">
+        <h3>Airpods</h3>
+        <p>Des écouteurs sans fil Apple avec boîtier de charge USB-C. Pratiques pour la musique, les appels et les trajets au quotidien.</p>
+        <div class="row">
+          <span class="price">129 €</span>
+          <a class="btn" href="https://www.cdiscount.com/telephonie/accessoires-portable-gsm/apple-airpods-5-avec-boitier-de-charge-usb-c/f-14420-airpods5.html?o=4365203750&p=129.00&cid=search_pla&cm_mmc=PLA!COR!!CD!17321031537!m102400825_pAIRPODS5_l9207759_tpla-293946777986__a140645654801&gad_source=1&gad_campaignid=17321031537&gbraid=0AAAAABIIGv8OAaBgR4QBMFctTSvrx5kBX&gclid=Cj0KCQiAk_DXBhCoARIsAHE-omMDyrYyCmXCcenWRrw05Jh84MFbKFZYJeXgEGc5iBY-XS8sQR2RmP8aAquLEALw_wcB" target="_blank" rel="noopener noreferrer">Voir le produit</a>
+        </div>
+      </div>
+      <button class="gift">Marquer comme offert</button>
+    </article>
+
+    <!-- ===== CADEAU : Pyjama ===== -->
+    <article class="card" data-cat="Beauté">
+      <div class="media">🎁</div>
+      <div class="body">
+        <h3>Carte cadeau sephora</h3>
+        <p>Une carte cadeau pour choisir librement parfums, maquillage ou soins. L’idée qui fait toujours plaisir.</p>
+        <div class="row">
+          <span class="price">A definir €</span>
+          <a class="btn" href="https://www.sephora.fr/carte-cadeau.html?utm_source=google&utm_medium=cpc&utm_campaign=SephoraEUR_SR_FRA_BRA-Splus_GEN_OTH_OGOING_EC_BRAN_GTAD_CRD_FRA_EUR_NAPP&utm_term=carte%20cadeau%20sephora&gad_source=1&gad_campaignid=29447914&gbraid=0AAAAAoL2wkG4SGc6-dFRV6ebPkhRrb0sR&gclid=Cj0KCQiAk_DXBhCoARIsAHE-omN0cI2WMbbHv0K7kg_nbv1F07oNaSBTI0TNBojCCx-g-w-hCacl64saAkE7EALw_wcB target="_blank" rel="noopener noreferrer">Voir le produit</a>
+        </div>
+      </div>
+      <button class="gift">Marquer comme offert</button>
+    </article>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <p>🎅 Fait avec ♥ pour Noël</p>
+  <p class="small">Joyeux Noël à toute la famille</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
